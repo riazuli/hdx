@@ -1,0 +1,189 @@
+header#header-section {
+  height: 95px;
+  background: #fff url(../images/header-bg.jpg) no-repeat scroll center center /
+    100% 100%;
+  display: flex;
+  position: relative;
+  &.header-border {
+    @include md-max {
+      border-bottom: 5px solid #000;
+    }
+  }
+  .container {
+    nav.main-navigation-wrap {
+      @include md-max {
+        z-index: 9999;
+        width: 100%;
+        order: 3;
+        background: #fff;
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        height: 0px;
+        overflow: hidden;
+        &.active-menu {
+          min-height: 125vh;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+      .main-navigation {
+        @include md-max {
+          width: 80%;
+          border: 1px solid;
+          position: absolute;
+          left: 10%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .close-mobile-menu {
+          height: 35px;
+          cursor: pointer;
+          width: 35px;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          span {
+            display: block;
+            width: 35px;
+            height: 1.5px;
+            position: relative;
+            background: transparent;
+            &:before,
+            &:after {
+              position: absolute;
+              content: " ";
+              width: 100%;
+              height: 100%;
+              left: 0;
+              background: #0b0b0b;
+              transform-origin: center;
+            }
+            &:before {
+              top: 0px;
+              transform: rotate(45deg);
+            }
+            &:after {
+              bottom: 0;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+        ul {
+          @include md-max {
+            margin-top: 50px;
+            margin-bottom: 65px;
+            margin-left: 20px;
+          }
+          li {
+            a {
+              font-size: 13px;
+              font-weight: 300;
+              padding: 15px 20px;
+              color: #212121;
+              text-transform: uppercase;
+              @include md-max {
+                padding: 8px 20px;
+                font-size: 16px;
+              }
+              &:hover {
+                color: $golapi;
+              }
+              span {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        .nav-content-mobile {
+          .form-wrap {
+            max-width: 350px;
+            margin-bottom: 35px;
+            @include rwd-max(480) {
+              margin-left: 15px;
+              margin-right: 15px;
+            }
+            h3 {
+              font-size: 16px;
+            }
+            form {
+              input {
+                font-size: 14px;
+                &::placeholder {
+                  font-size: 14px;
+                }
+              }
+              button {
+                font-size: 14px;
+              }
+            }
+            p {
+              font-size: 14px;
+              @include rwd-max(384){
+                padding-left: 0;
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-social-icons {
+      margin-left: 30px;
+      @include lg-min {
+        margin-left: 80px;
+      }
+      a:last-child {
+        margin-left: 10px;
+      }
+    }
+    .navigation-toggle-button {
+      cursor: pointer;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      .navigation-toggle {
+        span {
+          display: block;
+          width: 35px;
+          height: 3px;
+          position: relative;
+          background: #000;
+          &:before,
+          &:after {
+            position: absolute;
+            content: " ";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background: #000;
+            transform-origin: center;
+          }
+          &:before {
+            top: -10px;
+          }
+          &:after {
+            bottom: -10px;
+          }
+        }
+      }
+      &.active-toggle {
+        .navigation-toggle {
+          span {
+            background: transparent;
+            &:before {
+              top: 0;
+              transform: rotate(45deg);
+            }
+            &:after {
+              bottom: 0;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

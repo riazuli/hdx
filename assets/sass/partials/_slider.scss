@@ -1,0 +1,32 @@
+#slider-section {
+  position: relative;
+  .slider-items {
+      .single-slide {
+        height: 230px;  
+        background-repeat: no-repeat;   
+        background-size: cover;  
+    }
+  }
+  .slider-content {
+      padding-left: 50px;
+      z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center; 
+    padding-top: 50px;
+    img {
+      width: auto;
+      margin-right: 20px;
+    }
+    a {
+      color: #fff;
+      text-shadow: -1px -1px 10px #333, 1px -1px 10px #333, -1px 1px 10px #333,
+        1px 1px 10px #333;
+      font-size: 27px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+/* Reset */
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
+
+// img {
+//   max-width: 100%;
+//   vertical-align: middle;
+// }
+
+// ul {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// a,
+// a:hover {
+//   text-decoration: none;
+//   display: inline-block;
+//   transition: 0.5s;
+// }
+
+// button,
+// input {
+//   outline: none;
+// }
+
+// body {
+//   overflow-x: hidden;
+//   font-family: 'Roboto Condensed', sans-serif;
+//   position: relative;
+  // background: linear-gradient(to right, #00aaff, #00ff6c)
+
+// }
+
+// Chrome, Safari, Edge, Opera 
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+//   margin: 0;
+// }
+// Firefox 
+// input[type=number] {
+//   -moz-appearance: textfield;
+// }
+
+// p {
+  //     color: #ffffff; 
+  // font-size: $primary-font-size;
+  // letter-spacing: .5px;
+  // line-height: 26px;
+  // margin-top: 0;
+  // margin-bottom: 15px;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+  // margin-top: 0;
+  // margin-bottom: 20px;
+// }
+// .container {
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto; 
+//   @media(min-width: 768px) {
+//     width: 720px;
+//   }
+//   @media(min-width: 992px) {
+//     width: 970px;
+//   }
+//   @media(min-width: 1200px) {
+//     width: 1170px;
+//   }
+// }
+
+// .container {
+//   margin: 20px auto;
+// }
+
+// .box {
+//   width: 600px;
+//   margin: 140px auto;
+//   background: #fff;
+  // display: table;
+// }
+// .box-row {
+//   display: table-row;
+// }
+// .box-cell {
+//   display: table-cell;
+// }
+
+
+// Roboto 500
+body {
+  font-family: 'Roboto',sans-serif;
+}

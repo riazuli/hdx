@@ -1,0 +1,123 @@
+section#main-content {
+  overflow: hidden;
+  @include lg-min {
+    margin-top: -100px;
+    z-index: 2;
+    position: relative;
+  }
+  h2.main-content-title {
+    font-size: 54px;
+    font-weight: 400;
+    @include lg-min {
+      transform: translateY(150px);
+    }
+    @include md-max{
+      margin-bottom: 50px;
+    }
+    @include tab-max{
+      margin-bottom: 100px;
+      font-size: 40px;
+    }
+    @include rwd-max(480) {
+      font-size: 45px;
+    }
+    span {
+      font-weight: 700;
+      display: block;
+    }
+  }
+  .main-content-item {
+    margin: 30px 0;
+    position: relative;
+    &::after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+    .main-content-item-content {
+      padding-top: 15px;
+      max-width: calc(100% - 230px);
+      position: relative;
+      margin-left: 15px;
+      @include mobile-max {
+        max-width: calc(100% - 100px);
+      }
+      @include rwd-max(480) {
+        max-width: 100%;
+      }
+      float: left;
+      .main-content-item-title {
+        h3 {
+          &.title-number {
+            position: absolute;
+            color: #66e400;
+            opacity: 0.34;
+            font-size: 50px;
+            top: -10px;
+            left: -15px;
+            font-weight: 700;
+          }
+          &.title-name {
+            margin-bottom: 10px;
+            font-size: 30px;
+          }
+        }
+      }
+      .main-content-para {
+        a.common-btn {
+          text-decoration: underline;
+        }
+      }
+    }
+    .main-content-img {
+      max-width: 200px;
+      float: right;
+      img {
+      }
+      @include tab-max {
+        position: absolute;
+        opacity: 0.5;
+        z-index: -1;
+        top: -32%;
+        left: -115px;
+      }
+    }
+  }
+  @include tab-max {
+    .row {
+      [class*="col-"] {
+        &:nth-child(even) {
+          .main-content-item {
+            text-align: right;
+            .main-content-item-content {
+              float: right;
+              .main-content-item-title {
+                h3 {
+                  &.title-number {
+                    left: auto;
+                    right: 0;
+                  }
+                }
+              }
+            }
+            .main-content-img {
+              left: auto;
+              right: -115px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mobile-max {
+    .row {
+      [class*="col-"] {
+        &:nth-child(even) {
+          .main-content-item {
+             margin: 100px 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+/* Common css */
+
+.section-padding {
+    padding: 80px 0;
+}
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+.text-bold {
+    font-weight: 700;
+}
+.text-white {
+    color: $white;
+}
+.position-absolute {
+    position: absolute;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.position-relative {
+    position: relative;
+}
+.display-none {
+    display: none;
+}
+
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  @media (min-width: 1300px) {
+    .container {
+      width: 1250px; 
+    }
+  }

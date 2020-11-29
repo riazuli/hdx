@@ -1,0 +1,40 @@
+section#creation-content {
+    h2.creation-content-title {
+        font-size: 54px;
+        font-weight: 400;
+        @include lg-min{
+            margin-top: 50px;
+        }
+        @include md-max{
+            margin-bottom: 40px;
+        }
+        @include rwd-max(384){
+            font-size: 35px;
+        }
+        span {
+            font-weight: 700;
+            color: #010101;
+        }
+    }
+    .creation-content {
+        .creation-content-para {
+            p {
+                &:first-child {
+                    &::first-letter {
+                        color: #7b7b7b;
+                        font-size: 43px;
+                        font-weight: 700;
+                    }
+                }
+                margin: 30px 0;
+                color: #7b7b7b;
+                line-height: 35px;
+                font-size: 18px;
+                @include rwd-max(384){
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+section#creation-video {
+  margin-top: 40px; 
+  @include tab-max{
+    margin-top: 0;
+  }
+  @include rwd-max(480){
+    padding-top: 20px;
+  }
+  h2.creation-video-title {
+    // transform: translateY(-100%);
+    font-size: 62px;
+    text-align: center;
+    // position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .video-wrapper {
+    padding: 50px 0;
+    background: #0c0c0c;
+  }
+  a.video-button {
+    max-width: 450px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #0c0c0c;
+    border: 1px solid #0c0c0c;
+    display: block;
+    margin-top: 40px; 
+    padding: 18.5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include rwd-max(480){
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    span {
+        font-weight: 700;
+    }
+  }
+}

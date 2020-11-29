@@ -1,0 +1,150 @@
+/* Reset */
+
+// @font-face {
+//     font-family: "Ubuntu";
+//     src: url("../fonts/Ubuntu-Light.woff2") format("woff2"),
+//       url("../fonts/Ubuntu-Light.woff") format("woff");
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+//   }
+
+//   @font-face {
+//     font-family: "Ubuntu";
+//     src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"),
+//       url("../fonts/Ubuntu-Medium.woff") format("woff");
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+//   }
+
+//   @font-face {
+//     font-family: "Ubuntu";
+//     src: url("../fonts/Ubuntu.woff2") format("woff2"),
+//       url("../fonts/Ubuntu.woff") format("woff");
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+//   }
+
+//   @font-face {
+//     font-family: "AdelleSansW01";
+//     src: url("../fonts/AdelleSansW01-Regular.woff2") format("woff2"),
+//       url("../fonts/AdelleSansW01-Regular.woff") format("woff");
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+//   }
+
+//   @font-face {
+//     font-family: "Ubuntu";
+//     src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"),
+//       url("../fonts/Ubuntu-Bold.woff") format("woff");
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+//   }
+
+//   @font-face {
+//     font-family: romantically;
+//     src: url("../fonts/romantically.otf");
+//   }
+
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+// @font-face {
+//   font-family: 'Fishmonger EL';
+//   src: url('../fonts/FishmongerEL-Plain.woff2') format('woff2'),
+//       url('../fonts/FishmongerEL-Plain.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'RBNo3';
+//   src: url('../fonts/RBNo31-Bold.woff2') format('woff2'),
+//       url('../fonts/RBNo31-Bold.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  //   font-weight: 400;
+  font-size: 1em;
+  //   line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+a:hover {
+  text-decoration: none;
+}
+input[type="text"]:focus {
+  outline: 0;
+}
+button:focus {
+  outline: 0;
+}
+//   button:focus {
+//     outline-color: transparent;
+//   }
+.form-control:focus {
+  //   box-shadow: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.container {
+  max-width: 1250px;
+}
